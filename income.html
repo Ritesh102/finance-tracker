@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="income&expense.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <title>Finance Tracker</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <header>
+            <!-- HTML !-->
+            <nav class="navbar" id="navbar">
+                <a href="#" class="nav-logo"><img src="fin.jpg" height="60px" style="border-radius: 50%; padding-top: 10px;"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="first.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="inc_history.html" class="nav-link">Income History</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="details.html" class="nav-link">Data Visualization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="to-do.html" class="nav-link">Action Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="settings.html" class="nav-link">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Log Out</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="input-section">
+        <h3 id="view-bal">View balance</h3>
+        <!-- <h4 class="balance" id="balance">Balance: 0</h4> -->
+        <!-- <label for="category-select">Category:</label> -->
+        <select id="category-select-income" required>
+            <option value="" disabled selected hidden>Select source</option>
+            <option value="Salary">Salary</option>
+            <option value="Income tax return">Income tax return</option>
+            <option value="Rent">Rent</option>
+            <option value="Subsidy">Subsidy</option>
+            <option value="Others">Others</option>
+        </select>
+        <!-- <label for="amount-input">Amount:</label> -->
+        <input type="number" id="amount-input-income" autofocus placeholder="Amount" required>
+        <!-- <label for="date-input">Date:</label> -->
+        <input type="date" id="date-input-income" required>
+        <br>
+        <input type="text" id="note-input-income" autofocus placeholder="Add note..">
+        <button id="sub-btn" type="submit">Submit</button>
+        <h2 id="msg"></h2>
+    </div>
+
+</body>
+
+<script src="income.js"></script>
+
+</html>

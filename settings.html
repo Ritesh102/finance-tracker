@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="settings.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- HTML !-->
+        <nav class="navbar" id="navbar">
+            <a href="#" class="nav-logo"><img src="fin.jpg" height="60px" style="border-radius: 50%; padding-top: 10px;"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="first.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="exp_history.html" class="nav-link">Expense History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inc_history.html" class="nav-link">Income History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="details.html" class="nav-link">Data Visualization</a>
+                </li>
+                <li class="nav-item">
+                    <a href="to-do.html" class="nav-link">Action Items</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Log Out</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+
+    <h1 style="text-align: center;position:relative;padding: 20px  0 0;">Set your daily expense limit</h1>
+    <h3 style="text-align: center;position:relative;padding: 20px  0 0;">Click on the day which you want to set an expense limit for!</h3>
+    <!-- <div class="heading">
+        <input type="button" value="Set your daily expense limit" onclick="GenerateTable()" />
+        <div id="dvTable"></div>
+    </div> -->
+    <div class="container">
+        <div class="calendar">
+            <div class="calendar-header">
+                <span class="month-picker" id="month-picker"> May </span>
+                <div class="year-picker" id="year-picker">
+                    <span class="year-change" id="pre-year">
+                <pre><</pre>
+              </span>
+                    <span id="year">2023 </span>
+                    <span class="year-change" id="next-year">
+                <pre>></pre>
+              </span>
+                </div>
+            </div>
+
+            <div class="calendar-body">
+                <div class="calendar-week-days">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-days">
+                </div>
+            </div>
+            <div class="calendar-footer">
+            </div>
+            <div class="date-time-formate">
+                <div class="day-text-formate">TODAY</div>
+                <div class="date-time-value">
+                    <div class="time-formate">02:51:20</div>
+                    <div class="date-formate">23 - july - 2022</div>
+                </div>
+            </div>
+            <div class="month-list"></div>
+            <div id="heading"></div>
+            <div class="calendar-limit">
+            </div>
+        </div>
+    </div>
+    <script src="settings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="fin.jpg">
+    <link rel="stylesheet" href="first.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12671c0b06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Finance Tracker</title>
+</head>
+
+<body>
+    <header>
+        <!-- HTML !-->
+        <nav class="navbar" id="navbar">
+            <a href="#" class="nav-logo"><img src="fin.jpg" height="60px" style="border-radius: 50%; padding-top: 10px;"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="exp_history.html" class="nav-link">Expense History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inc_history.html" class="nav-link">Income History</a>
+                </li>
+                <li class="nav-item">
+                    <a href="details.html" class="nav-link">Data Visualization</a>
+                </li>
+                <li class="nav-item">
+                    <a href="to-do.html" class="nav-link">Action Items</a>
+                </li>
+                <li class="nav-item">
+                    <a href="settings.html" class="nav-link">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Log Out</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- <span class="bg">&#8377;</span> -->
+
+    <div class="grid-container">
+
+        <div class="grid-item"><img src="home_im1.png" class="image_home"></div>
+
+        <div class="grid-item">
+            <div class="btn-container">
+                <p class="welcome">Welcome to Penny Tracker</p>
+                <h1>
+                    <p> -A web Application by Ritesh Ramesh</p>
+                </h1>
+                <h2 id="view-balance">View balance</h2><br>
+                <button id="convert" class="convert">
+                    <i class="fa-solid fa-indian-rupee-sign"></i></button>
+                <p id="result"></p>
+                <br>
+                <form action="income.html">
+                    <button class="button-66" role="button" style="background-color: #4a63a5;">ADD INCOME</button>
+                </form>
+                <br><br>
+                <form action="expense.html">
+                    <button class="button-66" role="button" style="background-color:#ff565b;">ADD EXPENSE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="bubble" id="bubble">
+        <div class="bubble-content">
+            <span class="bubble-icon">&#128276;</span>
+        </div>
+    </div>
+    <div class="reminder-list" id="reminderList">
+        <div class="headd">Your reminder list:</div>
+        <span class="cross" onclick="hide()">&#9746;</span>
+        <div class="contents"></div>
+    </div>
+    <div class="triangle"></div>
+    <!-- <div class="reminder-list" id="reminderList">
+          </div>          -->
+
+    <script src="first.js"></script>
+
+
+
+
+</body>
+
+</html>
